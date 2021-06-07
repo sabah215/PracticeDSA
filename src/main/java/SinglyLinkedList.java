@@ -6,10 +6,20 @@ public class SinglyLinkedList {
 	
 	private int size;
 	
+	/**
+	 *  Here a Single LInked List is created. 
+	 *  It takes the value to be added to linked List as parameter.
+	 *   
+	 * */
+	
 	public Node createSinglyLinkedList(int data) {
+//		The head node is created
 		head = new Node();
+//		Create another node
 		Node node = new Node();
+//		Set the value to the node
 		node.setValue(data);
+		
 		head = node;
 		node.setNext(null);
 		tail = node;
@@ -87,8 +97,49 @@ public class SinglyLinkedList {
 		return false;
 	}
 	
-	public void deleteNode() {
-		//TODO
+	public void deleteNode(int loc) {
+		
+		
+		if(!existsLinkedList()) {
+			System.out.println("List does not exists");
+			}
+		
+		/**
+		 * Delete for 0 location 
+		 * */
+		else if(loc == 0){
+			
+			if(getSize() == 0) {
+					tail = null;
+				}
+		
+			head = head.getNext();
+			setSize(getSize() - 1);
+		}
+		else if(loc >= getSize()-1) {
+			Node temp = head;
+			for(int i = 0; i < (getSize() - 1); i++) {
+				temp = temp.getNext();			
+			}
+			
+			if(temp == head) {
+				tail = head =null;
+				setSize(getSize() - 1);
+				return;
+				}
+			temp.setNext(null);
+			tail = temp;
+			setSize(getSize() - 1);
+			}
+		else {
+			Node temp = head;
+			for(int i = 0; i<loc-1;i++) {
+				temp = temp.getNext();
+			}
+			temp.setNext(temp.getNext().getNext());
+			setSize(getSize()-1);
+			
+		}
 	}
 	
 	public void deleteList() {
