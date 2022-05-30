@@ -99,13 +99,7 @@ public class Problems {
 	
 	
 	
-	static int factorial(int num) {
-		int result = 0;
-		
-		
-		
-		return result;
-	}
+	
 	
 	
 
