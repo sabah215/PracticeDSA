@@ -1,30 +1,66 @@
 package com.recursion;
 
+import javax.xml.transform.stax.StAXResult;
+import java.util.ArrayList;
+
 public class RecursionWithArray {
 
     public static void main(String[] args) {
-        int [] arr = {1,2,4,8,9,12};
+        int [] arr = {1,2,4,8,8,9,12};
+    ArrayList<Integer> list = new ArrayList<>();
 
-
-        System.out.println(isSorted(arr));
+//        System.out.println(isSorted(arr,0));
+//        System.out.println(search(arr,8,0));
+//        System.out.println(findIndex(arr,8,0));
+//        System.out.println(findIndexLast(arr,8,arr.length-1));
+        System.out.println(findIndexes(arr, 8,0,list));
     }
 
-    public static boolean isSorted(int[] arr){
-       int i = 0;
+    public ArrayList<Integer> findIndexes(int[] arr, int val, int index, ArrayList<Integer> list){
+         if(index == arr.length)
+             return list;
 
-       return check(arr, i);
+         if (val == arr[index])
+             list.add(index);
+
+         return findIndexes(arr, val,index+1,list);
+    }
+    // check if sorted
+    public static boolean isSorted(int[] arr, int index){
+        if(index == arr.length - 1)
+            return true;
+
+        return arr[index] < arr[index + 1] && isSorted(arr, index + 1);
 
     }
-// Hi
-    public static boolean check(int[] arr, int c){
+    // Linear Search
 
-        if(c < arr.length) {
-            if (arr[c] > arr[c + 1])
-                return false;
+    public static boolean search(int [] arr, int val, int index){
 
-
-            check(arr, c + 1);
+        if(index == arr.length - 1){
+            return false;
         }
-        return true;
+        return arr[index] == val || search(arr, val,index + 1);
     }
+
+    public static int findIndex(int[] arr, int val, int index){
+        if(index == arr.length){
+            return -1;
+        }
+       if(arr[index] == val) {
+           return index;
+       }
+       else return findIndex(arr, val,index + 1);
+    }
+
+    public static int findIndexLast(int[] arr, int val, int index){
+        if(index == -1){
+            return -1;
+        }
+        if(arr[index] == val) {
+            return index;
+        }
+        else return findIndexLast(arr, val,index - 1);
+    }
+
 }
