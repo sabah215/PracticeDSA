@@ -14,7 +14,6 @@ public class FirstUppercaseLetter {
                 return String.valueOf(str.charAt(i));
             }
 
-
         }
         return   getFirstUppercase(str, i + 1);
 
