@@ -2,7 +2,13 @@ package com.recursion.basicstringquestions;
 
 public class Ascii {
     public static void main(String[] args) {
-        char ch = 'b';
+
+//        char ch = 'a';
+        //Get ascii value
+//        System.out.println(ch + 0);
+        // Cast back to character
+//        System.out.println((char) (ch + 0));
+//        System.out.println();
         subseqAscii("", "abc");
 
     }

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class SubSeq {
 
     public static void main(String[] args) {
-        System.out.println(subseq2("", "abc"));
+        subseq("", "abc");
 
     }
 
