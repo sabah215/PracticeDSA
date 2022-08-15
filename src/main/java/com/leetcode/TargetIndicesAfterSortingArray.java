@@ -6,22 +6,28 @@ import java.util.List;
 
 public class TargetIndicesAfterSortingArray {
     public static void main(String[] args) {
-        int [] nums = {1,2,5,2,2,10,2,4,2,3};
-        List<Integer> indices = targetIndices(nums, 8);
+        int [] nums = {1,2,5,2,2,10,2};
+        List<Integer> indices = targetIndices(nums, 2);
 
         System.out.println(indices);
     }
     static List<Integer> targetIndices(int[] nums, int target) {
         Arrays.sort(nums);
         List<Integer> indices = new ArrayList<>();
-        int [] arr = new int[2];
-        arr[0] = search(nums, target,true);
-        arr[1] = search(nums, target,false);
 
-        for (int i = arr[0]; i <= arr[1]; i++) {
-            if(i != -1)
+        for(int i=0;i<nums.length;i++){
+            if (nums[i] == target){
                 indices.add(i);
+            }
         }
+//        int [] arr = new int[2];
+//        arr[0] = search(nums, target,true);
+//        arr[1] = search(nums, target,false);
+//
+//        for (int i = arr[0]; i <= arr[1]; i++) {
+//            if(i != -1)
+//                indices.add(i);
+//        }
         return indices;
     }
     static int search(int[] nums, int target,  boolean isFirst){
