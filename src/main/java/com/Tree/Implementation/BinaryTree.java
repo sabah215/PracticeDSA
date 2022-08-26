@@ -1,5 +1,6 @@
 package com.Tree.Implementation;
 
+import java.util.ArrayDeque;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -25,6 +26,17 @@ public class BinaryTree {
 
     // Breadth First Search: Level Order Traversal
     public void levelOrderTraversal(Node root){
+        if(root == null) return;
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.add(root);
+        while (!queue.isEmpty()){
+            Node current = queue.remove();
+            System.out.print(current.data + " ");
+            if(current.left != null) queue.add(root.left);
+            if (current.right !=null) queue.add(root.right);
+
+        }
+
 
     }
 

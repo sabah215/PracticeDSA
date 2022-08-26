@@ -19,6 +19,9 @@ public class Main {
         tree.preorder(tree.root);
         System.out.println();
         tree.postorder(tree.root);
+        System.out.println();
+        tree.levelOrderTraversal(tree.root);
+
 
 
 //        boolean isFound = tree.search(tree.root, 7);

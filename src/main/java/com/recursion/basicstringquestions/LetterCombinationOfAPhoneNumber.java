@@ -2,10 +2,13 @@ package com.recursion.basicstringquestions;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+* Google type question
+*
+* */
 public class LetterCombinationOfAPhoneNumber {
     public static void main(String[] args) {
-//        pad("","12");
+        pad("","12");
 //        System.out.println(padCount("","12"));
         System.out.println(padRet("","12").size());
         System.out.println(padCount("","12"));
