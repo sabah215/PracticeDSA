@@ -34,7 +34,6 @@ public class BinaryTree {
             System.out.print(current.data + " ");
             if(current.left != null) queue.add(root.left);
             if (current.right !=null) queue.add(root.right);
-
         }
 
 
