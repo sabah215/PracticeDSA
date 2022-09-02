@@ -20,7 +20,7 @@ public class Main {
         System.out.println();
         tree.postorder(tree.root);
         System.out.println();
-        tree.levelOrderTraversal(tree.root);
+       // tree.levelOrderTraversal(tree.root);
 
 
 

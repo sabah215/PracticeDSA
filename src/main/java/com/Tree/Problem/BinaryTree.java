@@ -41,7 +41,7 @@ public class BinaryTree {
         System.out.println();
         tree.postOrder(tree.root);
     }
-
+    //BFS / Level order traversal
     public void levelOrder(TreeNode node){
         Queue<TreeNode> queue = new ArrayDeque<>();
         if(root != null){
