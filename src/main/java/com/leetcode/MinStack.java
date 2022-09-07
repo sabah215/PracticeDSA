@@ -30,6 +30,8 @@ public class MinStack {
         obj.pop();
         System.out.println(obj.getMin());
 
+
+
     }
 
     public void push(int val) {
@@ -57,6 +59,8 @@ public class MinStack {
         }
         min = newMin;
         indexOfMin = newMinIndex;
+
+
     }
 
     public int top() {

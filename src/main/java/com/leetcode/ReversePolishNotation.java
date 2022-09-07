@@ -9,7 +9,7 @@ public class ReversePolishNotation {
 //    List<Character> list = new LinkedList<Character>();
 
     public static void main(String[] args) {
-       String [] arr = {"10","6","9","3","+","-11","*","/","*","17","+","5","+"};
+       String [] arr = {"4","3","-"};
 
        System.out.println(evalRPN(arr));
 
@@ -24,10 +24,7 @@ public class ReversePolishNotation {
         int result = 0;
 
         Stack<Integer> st = new Stack<>();
-
-
-            for (String s: tokens) {
-
+            for (String s : tokens) {
                 if (s.equals("+")) {
                     result = st.pop() + st.pop() ;
                     st.push(result);
@@ -42,14 +39,13 @@ public class ReversePolishNotation {
                 }
                 else if (s.equals("*")) {
                     result = st.pop() *st.pop();
-
                     st.push(result);
-
                 }
+
                 else if (s.equals("/")) {
                     int a = st.pop();
                     int b = st.pop();
-                    result = (int)b/ a;
+                    result = (int) b / a;
 
                     st.push(result);
                 } else {
@@ -57,7 +53,7 @@ public class ReversePolishNotation {
                 }
 
             }
-
+        result = st.pop();
         return result;
     }
 
