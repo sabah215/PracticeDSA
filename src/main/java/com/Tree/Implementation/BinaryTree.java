@@ -72,15 +72,10 @@ public class BinaryTree {
     }
 
     public int getHeight(Node root){
-        int leftHeight = 0;
-        int rightHeight = 0;
-        if (root == null)
-            return -1;
-
-        leftHeight = getHeight(root.left);
-        rightHeight = getHeight(root.right);
-        return Math.max(leftHeight,rightHeight) + 1;
+        if (root == null) return -1;
+        return Math.max(getHeight(root.left),getHeight(root.right) + 1);
     }
+
     public boolean isBST(Node root){
         boolean isBst = false;
         return isBst;
