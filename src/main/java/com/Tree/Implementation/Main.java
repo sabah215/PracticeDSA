@@ -19,20 +19,21 @@ public class Main {
 
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree(3);
-        tree.insert(20);
         tree.insert(9);
+        tree.insert(20);
   
         tree.insert(15);
         tree.insert(7);
-//        tree.insert(4);
-//        tree.insert(13);
-//        tree.insert(20);
-//        tree.insert(1);
+        tree.insert(4);
+        tree.insert(13);
+
+        tree.insert(1);
 
 //        tree.inOrder(tree.root);
 //        System.out.println();
         tree.preorder(tree.root);
         System.out.println();
+        tree.levelOrderTraversal(tree.root);
 //        tree.postorder(tree.root);
 //        System.out.println();
        // tree.levelOrderTraversal(tree.root);

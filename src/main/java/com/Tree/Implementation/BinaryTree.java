@@ -26,19 +26,36 @@ public class BinaryTree {
     public BinaryTree(int data){ root = new Node(data);  }
 
     // Breadth First Search: Level Order Traversal
-//    public List<List<Integer>> levelOrderTraversal(Node root){
-////        if(root == null) return l;
-//        Queue<Node> queue = new ArrayDeque<>();
-//        queue.add(root);
-//        while (!queue.isEmpty()){
-//            Node current = queue.remove();
-//            System.out.print(current.data + " ");
-//            if(current.left != null) queue.add(root.left);
-//            if (current.right !=null) queue.add(root.right);
-//        }
-//
-//
-//    }
+
+
+    public void levelOrderTraversal(Node root){
+        Queue<Node> queue = new LinkedList<>();
+
+        if(root == null) return;
+
+        queue.add(root);
+        queue.add(null);
+        while (!queue.isEmpty()){
+            Node current = queue.poll();
+
+            if(current == null) {
+                if(queue.isEmpty()) return;
+                queue.add(null);
+                System.out.println();
+                continue;
+            }
+
+            else System.out.print(current.data + " ");
+
+            if(current.left != null)
+                queue.add(current.left);
+            if (current.right != null)
+                queue.add(current.right);
+
+        }
+
+      return;
+    }
 
     public void preorder(Node root){
         if(root != null){
