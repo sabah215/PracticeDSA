@@ -9,22 +9,51 @@ import java.util.HashMap;
  * */
 
 public class HashMapImplementation {
-    private int [] nodes = new int[1000001];
+    private int [] nodes = new int[16];
+    private int size = 0;
+    static final int DEFAULT_INITIAL_CAPACITY = 1 << 4;
+    static final float LOAD_FACTOR = 0.75f;
+
 
     class ListNode {
 
         private int key;
         private int value;
+        private int hashCode;
         ListNode next;
 
-        public ListNode(int key,int value){
+        public ListNode(int key,int value, int hashCode, ListNode next){
             this.key = key;
             this.value = value;
+            this.hashCode = hashCode;
+            this.next = next;
+        }
+
+        public int getKey() {
+            return key;
+        }
+        public int getValue() {
+            return value;
+        }
+
+        public int setValue(int newValue){
+            int oldValue = value;
+            value = newValue;
+            return oldValue;
         }
     }
 
 
-    public HashMapImplementation(){
+    public HashMapImplementation(int initialCapacity, float loadfactor){
+        // if initial capacity < 0
+        // throw IllegalArgumentException
+        if (initialCapacity < 0) {
+            throw new IllegalArgumentException("Illegal Initial Cpacity: " + initialCapacity);
+        }
+
+        if (initialCapacity > DEFAULT_INITIAL_CAPACITY){
+
+        }
 
     }
 
