@@ -1,10 +1,8 @@
 package com.Tree.Problem;
-
-import java.util.ArrayDeque;
 import java.util.Queue;
+import java.util.ArrayDeque;
 
 public class BinaryTree {
-
     class TreeNode{
         int val;
         TreeNode left;
