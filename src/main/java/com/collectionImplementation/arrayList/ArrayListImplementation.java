@@ -9,6 +9,9 @@ public class ArrayListImplementation {
     public ArrayListImplementation(){
         this.arr = new int[DEFAULT_SIZE];
     }
+    public ArrayListImplementation(int initialCapacity){
+        this.arr = new int[initialCapacity];
+    }
 
     public void addElement(int e){
         if(i == arr.length){
