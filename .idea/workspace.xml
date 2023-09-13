@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="948889ec-edc9-4299-aa59-abca12ea4849" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/PracticeDSA/com/collectionImplementation/listDemo/ListExample2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticeDSA/com/collectionImplementation/listDemo/ListExample2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Tree/Implementation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Tree/Implementation/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Tree/Implementation/TreeImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Tree/Implementation/TreeImplementation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,19 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/learner/Desktop/Projects/PracticeDSA&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/learner/Desktop/Projects/server"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.collectionImplementation.listDemo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ListExample2">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.collectionImplementation.arrayList.listDemo.ListExample" />
       <module name="PracticeDSA" />
@@ -74,6 +76,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Tree.Implementation.Main" />
+      <module name="PracticeDSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Tree.Implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TreeImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Tree.Implementation.TreeImplementation" />
+      <module name="PracticeDSA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Tree.Implementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="com.collectionImplementation.listDemo.ListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.collectionImplementation.listDemo.ListExample" />
       <module name="PracticeDSA" />
@@ -89,6 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.TreeImplementation" />
         <item itemvalue="Application.ListExample2" />
         <item itemvalue="Application.com.collectionImplementation.listDemo.ListExample" />
         <item itemvalue="Application.ListExample" />

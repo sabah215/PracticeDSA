@@ -46,4 +46,16 @@ public class TreeImplementation {
             populate(scanner, node.right);
         }
     }
+
+    public void display(){
+        display(root, "");
+    }
+
+    private void display(Node node, String indent){
+        if (node == null) return;
+
+        System.out.println(indent + node.value);
+        display(node.left, indent + "\t");
+        display(node.right, indent + "\t");
+    }
 }
