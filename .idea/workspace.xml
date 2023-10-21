@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="948889ec-edc9-4299-aa59-abca12ea4849" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/implementation/HashMapImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/implementation/HashMapImplementation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,31 +29,27 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2N7OvBAr10ovrdDfsJ2dep26AQt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2WAJ0RfMkHe5tOr2XNRp9pzzNSY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/home/learner/Desktop/Projects/PracticeDSA"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.collectionImplementation.listDemo" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="ListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.collectionImplementation.arrayList.listDemo.ListExample" />
+}</component>
+  <component name="RunManager" selected="Application.CheckAllCharactersAreSame">
+    <configuration name="BinaryToDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.BinaryToDecimal" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.collectionImplementation.arrayList.listDemo.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListExample2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.collectionImplementation.listDemo.ListExample2" />
+    <configuration name="CheckAllCharactersAreSame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.CheckAllCharactersAreSame" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.collectionImplementation.listDemo.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Tree.Implementation.Main" />
+    <configuration name="CountSetBitsInInteger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.CountSetBitsInInteger" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Tree.Implementation.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,25 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TreeImplementation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Tree.Implementation.TreeImplementation" />
+    <configuration name="NonRepetitiveString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.NonRepetitiveString" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.Tree.Implementation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.collectionImplementation.listDemo.ListExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.collectionImplementation.listDemo.ListExample" />
-      <module name="PracticeDSA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.collectionImplementation.listDemo.*" />
+          <option name="PATTERN" value="com.geeksforgeeks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +98,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.TreeImplementation" />
-        <item itemvalue="Application.ListExample2" />
-        <item itemvalue="Application.com.collectionImplementation.listDemo.ListExample" />
-        <item itemvalue="Application.ListExample" />
+        <item itemvalue="Application.CheckAllCharactersAreSame" />
+        <item itemvalue="Application.NonRepetitiveString" />
+        <item itemvalue="Application.BinaryToDecimal" />
+        <item itemvalue="Application.CountSetBitsInInteger" />
       </list>
     </recent_temporary>
   </component>
@@ -126,10 +109,10 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="948889ec-edc9-4299-aa59-abca12ea4849" name="Changes" comment="" />
-      <created>1679011887461</created>
+      <created>1696169229932</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1679011887461</updated>
+      <updated>1696169229932</updated>
     </task>
     <servers />
   </component>
@@ -143,5 +126,38 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geeksforgeeks/CountSetBitsInInteger.java</url>
+          <line>7</line>
+          <properties class="com.geeksforgeeks.CountSetBitsInInteger" method="countSetBits">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geeksforgeeks/BinaryToDecimal.java</url>
+          <line>7</line>
+          <properties class="com.geeksforgeeks.BinaryToDecimal" method="binaryToDecimal">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/geeksforgeeks/NonRepetitiveString.java</url>
+          <line>12</line>
+          <properties class="com.geeksforgeeks.NonRepetitiveString" method="nonRepetitive">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

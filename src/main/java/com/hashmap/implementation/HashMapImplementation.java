@@ -12,7 +12,7 @@ public class HashMapImplementation {
     private ListNode [] nodes ;
     private int size = 0;
     static final int DEFAULT_INITIAL_CAPACITY = 1 << 2;
-//    static final float LOAD_FACTOR = 0.75f;
+    static final float LOAD_FACTOR = 0.75f;
 
 
     class ListNode {
@@ -47,10 +47,12 @@ public class HashMapImplementation {
     public HashMapImplementation(){
         // if initial capacity < 0
         // throw IllegalArgumentException
-        nodes = new ListNode[7];
+        nodes = new ListNode[DEFAULT_INITIAL_CAPACITY];
     }
 
     public void put(int key, int value){
+
+
         int hash = key % nodes.length;
         ListNode node = new ListNode(key, value,hash, null);
 
