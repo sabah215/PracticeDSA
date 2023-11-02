@@ -1,62 +1,59 @@
-//package com.Tree.Implementation;
-//
-//import java.util.ArrayDeque;
-//import java.util.LinkedList;
-//import java.util.List;
-//import java.util.Queue;
-//
-//public class BinaryTree {
-//
-//    class Node{
-//        // stores data
-//        private int data;
-//        // stores the address of left child
-//        private Node left, right;
-//
-//        public Node(int data){
-//            this.data = data;
-//            left = right = null;
-//        }
-//    }
-//
-//    Node root;
-//
-//    public BinaryTree(){ root = null; }
-//
-//    public BinaryTree(int data){ root = new Node(data);  }
-//
-//    // Breadth First Search: Level Order Traversal
-//
-//
-//    public void levelOrderTraversal(Node root){
-//        Queue<Node> queue = new LinkedList<>();
-//
-//        if(root == null) return;
-//
-//        queue.add(root);
-//        queue.add(null);
-//        while (!queue.isEmpty()){
-//            Node current = queue.poll();
-//
-//            if(current == null) {
-//                if(queue.isEmpty()) return;
-//                queue.add(null);
-//                System.out.println();
-//                continue;
-//            }
-//
-//            else System.out.print(current.data + " ");
-//
-//            if(current.left != null)
-//                queue.add(current.left);
-//            if (current.right != null)
-//                queue.add(current.right);
-//
-//        }
-//
-//      return;
-//    }
-//
+package com.Tree.Implementation;
+
+import java.util.ArrayDeque;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
+public class BinaryTree {
+
+    class Node{
+        // stores data
+        private int data;
+        // stores the address of left child
+        private Node left, right;
+
+        public Node(int data){
+            this.data = data;
+            left = right = null;
+        }
+    }
+
+    Node root;
+
+    public BinaryTree(){ root = null; }
+
+    public BinaryTree(int data){ root = new Node(data);  }
+
+    // Breadth First Search: Level Order Traversal
+    public void levelOrderTraversal(Node root){
+        Queue<Node> queue = new LinkedList<>();
+
+        if(root == null) return;
+
+        queue.add(root);
+        queue.add(null);
+        while (!queue.isEmpty()){
+            Node current = queue.poll();
+
+            if(current == null) {
+                if(queue.isEmpty()) return;
+                queue.add(null);
+                System.out.println();
+                continue;
+            }
+
+            else System.out.print(current.data + " ");
+
+            if(current.left != null)
+                queue.add(current.left);
+            if (current.right != null)
+                queue.add(current.right);
+
+        }
+        return;
+    }
+
 //    public void preorder(Node root){
 //        if(root != null){
 //            System.out.print(root.data + " ");
@@ -65,34 +62,33 @@
 //        }
 //        return;
 //    }
-//
-//    // Depth First Search: Inorder
-//    // Time Complexity O(n)
-//    // Space Complexity O(h) h is the height of the tree
-//    public void inOrder(Node root) {
-//        if (root != null) {
-//            inOrder(root.left);
-//            System.out.print(root.data + " ");
-//            inOrder(root.right);
-//        }
-//        return;
-//    }
-//
-//    public void postorder(Node root){
-//        if(root != null){
-////            System.out.print(root.data + " ");
-//            postorder(root.left);
-//            postorder(root.right);
-//            System.out.print(root.data + " ");
-//        }
-//        return;
-//    }
-//
-//    public int getHeight(Node root){
-//        if (root == null) return -1;
-//        return Math.max(getHeight(root.left),getHeight(root.right) + 1);
-//    }
-//
+
+    // Depth First Search: Inorder
+    // Time Complexity O(n)
+    // Space Complexity O(h) h is the height of the tree
+    public void inOrder(Node root) {
+        if (root != null) {
+            inOrder(root.left);
+            System.out.print(root.data + " ");
+            inOrder(root.right);
+        }
+        return;
+    }
+
+    public void postorder(Node root){
+        if(root != null){
+            postorder(root.left);
+            postorder(root.right);
+            System.out.print(root.data + " ");
+        }
+        return;
+    }
+
+    public int getHeight(Node root){
+        if (root == null) return -1;
+        return Math.max(getHeight(root.left),getHeight(root.right) + 1);
+    }
+
 //    public boolean isBST(Node root){
 //        boolean isBst = false;
 //        return isBst;
@@ -199,8 +195,8 @@
 //        if(root.data < data)
 //            return search(root.right,data);
 //
-//        return search(root.left, data);
+//        return search(root.left, data);0
 //
 //       // return false;
 //    }
-//}
+}
