@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="948889ec-edc9-4299-aa59-abca12ea4849" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/PracticeDSA/com/interview/amazon/FruitCrush.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/PracticeDSA/com/interview/amazon/FruitCrush.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/implementation/HashMapImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/implementation/HashMapImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hashmap/implementation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hashmap/implementation/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.RemoveOutermostParanthesis">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CheckAllCharactersAreSame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.CheckAllCharactersAreSame" />
       <module name="PracticeDSA" />
@@ -83,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NonRepetitiveString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geeksforgeeks.NonRepetitiveString" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hashmap.implementation.Main" />
       <module name="PracticeDSA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geeksforgeeks.*" />
+          <option name="PATTERN" value="com.hashmap.implementation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.RemoveOutermostParanthesis" />
         <item itemvalue="Application.FruitCrush" />
         <item itemvalue="Application.LongestValidSubstring" />
         <item itemvalue="Application.CheckAllCharactersAreSame" />
-        <item itemvalue="Application.NonRepetitiveString" />
       </list>
     </recent_temporary>
   </component>
@@ -188,20 +189,6 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/RemoveOutermostParanthesis.java</url>
-          <line>11</line>
-          <properties class="com.leetcode.RemoveOutermostParanthesis" method="removeOuterParentheses">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/RemoveOutermostParanthesis.java</url>
-          <line>7</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

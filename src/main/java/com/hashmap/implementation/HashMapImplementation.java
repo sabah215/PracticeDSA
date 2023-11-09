@@ -1,6 +1,6 @@
 package com.hashmap.implementation;
 
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * Hashmap contains null value in both key and value.
@@ -8,79 +8,140 @@ import java.util.HashMap;
  *
  * */
 
-public class HashMapImplementation {
-    private ListNode [] nodes ;
-    private int size = 0;
-    static final int DEFAULT_INITIAL_CAPACITY = 1 << 2;
-    static final float LOAD_FACTOR = 0.75f;
+public class HashMapImplementation<K, V> {
 
+    private class Node  {
+        K key;
+        V value;
 
-    class ListNode {
-
-        private int key;
-        private int value;
-        private int hashCode;
-        ListNode next;
-
-        public ListNode(int key,int value, int hashCode, ListNode next){
-            this.key = key;
+        public Node (K key, V value){
+            this.key=key;
             this.value = value;
-            this.hashCode = hashCode;
-            this.next = next;
-        }
-
-        public int getKey() {
-            return key;
-        }
-        public int getValue() {
-            return value;
-        }
-
-        public int setValue(int newValue){
-            int oldValue = value;
-            value = newValue;
-            return oldValue;
         }
     }
 
+    private int n = 0; // no. of nodes
+    private int N; // no. of buckets
+
+    private LinkedList<Node> [] buckets;
 
     public HashMapImplementation(){
-        // if initial capacity < 0
-        // throw IllegalArgumentException
-        nodes = new ListNode[DEFAULT_INITIAL_CAPACITY];
+        this.N = 4;
+        this.buckets = new LinkedList [N];
+        for(int i = 0; i < buckets.length; i++){
+            this.buckets[i] = new LinkedList<>();
+        }
     }
 
-    public void put(int key, int value){
+    public void put(K key, V value){
+        int bi = getHash(key);
+        int ni = searchInLL(key, bi);
 
-
-        int hash = key % nodes.length;
-        ListNode node = new ListNode(key, value,hash, null);
-
-        if(nodes[hash] == null){
-           nodes[hash] = node;
+        if(ni == -1){
+           buckets[bi].add(new Node(key, value));
+           n++;
         }
 
-        else{
-            ListNode temp = nodes[hash];
-            while (temp.next != null){
-                if (temp.next == null)
-                    temp.next = node;
-                temp = temp.next;
+        else {
+            Node node = buckets[bi].get(ni);
+            node.value = value;
+        }
+
+        double lambda = (double) n/N;
+        if(lambda > 2.0){
+            rehash();
+        }
+    }
+
+    public V get(K key){
+        int bi = getHash(key);
+        int ni = searchInLL(key, bi);
+        if(ni == -1){
+            return null;
+        }
+        Node node = buckets[bi].get(ni);
+        return node.value;
+    }
+
+    public boolean containsKey(K key){
+        int bi = getHash(key);
+        int ni = searchInLL(key, bi);
+        if(ni == -1){
+            return false;
+        }
+        return true;
+    }
+    public ArrayList<K> keySet(){
+        ArrayList<K> keys = new ArrayList<>();
+        for (LinkedList<Node> ll : buckets){
+            for (int i = 0; i < ll.size(); i++) {
+                Node node = ll.get(i);
+                keys.add(node.key);
             }
-         }
-
-        return;
+        }
+        return keys;
     }
 
-    public int get(int key){
-        int value = 0;
-        return value;
+    public V remove(K key){
+        int bi = getHash(key);
+        int ni = searchInLL(key, bi);
+        if(ni == -1){
+            return null;
+        }
+        else {
+            Node node = buckets[bi].remove(ni);
+            n--;
+            return node.value;
+        }
+    }
+    public boolean isEmpty(){
+        return n == 0;
+    }
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (LinkedList<Node> ll : buckets){
+            for (Node node: ll ){
+                sb.append(node.key);
+                sb.append(" = ");
+                sb.append(node.value);
+                sb.append(",");
+            }
+        }
+        sb.append("]");
+        return sb.toString();
     }
 
-    public void remove(int key){
-
+    private int getHash(K key){
+        int index = Math.abs(key.hashCode()) % N;
+        return index;
     }
 
+    private int searchInLL(K key, int bi){
+        LinkedList<Node> ll = buckets[bi];
+        for(int i = 0; i < ll.size(); i++){
+            Node node = ll.get(i);
+            if(node.key.equals(key)){
+                return i;
+            }
+        }
+        return -1;
+    }
 
+    private void rehash(){
+        LinkedList<Node> [] oldList = buckets;
+        buckets = new LinkedList[2*N];
+        for (int i = 0; i< buckets.length; i++){
+            buckets[i] = new LinkedList<>();
+        }
 
+        for (int i = 0; i < oldList.length; i++){
+            LinkedList<Node> ll = oldList[i];
+            for (int j=0; j<ll.size(); j++){
+                Node node = ll.get(j);
+                put(node.key, node.value);
+            }
+        }
+    }
 }
