@@ -24,26 +24,20 @@ public class FruitCrush {
 
         /* push the first element initially */
         st.push(fruits.get(0));
-
-
-        while(!st.empty()){
-
-            for(int i = 1; i < fruits.size(); i++){
-                /* if stack is empty then push the ith element */
-                if (st.empty()){
-                    st.push(fruits.get(i));
-                }
-
-                /* if top of stack is != ith element, then pop() */
-                else if(st.peek() != fruits.get(i)){
-                    st.pop();
-                }
-                else{
-                    st.push(fruits.get(i));
-                }
+        for(int i = 1; i < fruits.size(); i++){
+            /* if stack is empty then push the ith element */
+            if (st.empty()){
+                st.push(fruits.get(i));
             }
-            return st.size();
+
+            /* if top of stack is != ith element, then pop() */
+            else if(st.peek() != fruits.get(i)){
+                st.pop();
+            }
+            else{
+                st.push(fruits.get(i));
+            }
         }
-        return 0;
+        return st.size();
     }
 }
